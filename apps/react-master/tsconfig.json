@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "esnext",
+    "types": [],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,  // 改为 false
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": false,  // 改为 false 或移除
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "moduleResolution": "nodenext",  // 明确指定模块解析
+    "esModuleInterop": true,         // 添加这个
+    "allowSyntheticDefaultImports": true,  // 添加这个
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
