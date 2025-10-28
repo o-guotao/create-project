@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet, RouteObject } from 'react-router-dom'
 import Home from '../pages/home'
 import Recommend from '../components/Recommend'
+import Chat from '../pages/chat'
 
 export interface extraBizObject {
   title?: string
@@ -33,6 +34,11 @@ export const router: ZHRouter[] = [
         element: <div>专栏</div>,
       },
     ],
+  },
+  {
+    path: '/chat',
+    title: '直答',
+    element: <Chat />,
   },
   {
     path: '/education',
